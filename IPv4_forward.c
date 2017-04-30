@@ -29,7 +29,10 @@ int stud_fwd_deal(char *pBuffer, int length) {
 	}
 
 	// not local host, then search route table
-	// max_masklen is the maximum of masklen of route table items who've been successfully matched, and nexthop is to record
+	/* 
+	 * max_masklen is the maximum of masklen of route table items
+	 * who've been successfully matched, and nexthop is to record
+	 */
 	unsigned int max_masklen = 0, nexthop;
 	for (int i = 0; i < table_size; ++i) {
 		unsigned int masklen = ntohl(route_table[i].masklen);
