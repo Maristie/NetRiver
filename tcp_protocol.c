@@ -1,7 +1,7 @@
 #include "sysInclude.h"
 
 // set some parameters
-#define max_tcb_num 10
+#define max_tcb_num 	10
 #define wait_time	10000
 
 // definition as instructions of NetRiver
